@@ -1,0 +1,119 @@
+.nav-desktop {
+  position: fixed;
+  top: 50%;
+  left: 28px;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+ 
+.nav-desktop ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+ 
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  border-left: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+ 
+.nav-item .nav-label {
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 0.25s ease, opacity 0.25s ease;
+  opacity: 0;
+}
+ 
+.nav-item:hover .nav-label,
+.nav-item--active .nav-label {
+  max-width: 140px;
+  opacity: 1;
+}
+ 
+.nav-item--active {
+  color: var(--green);
+  border-left-color: var(--green);
+}
+ 
+.nav-item:hover {
+  color: var(--cyan);
+}
+ 
+.nav-mobile-toggle {
+  display: none;
+}
+ 
+.nav-mobile-panel {
+  display: none;
+}
+ 
+@media (max-width: 900px) {
+  .nav-desktop {
+    display: none;
+  }
+ 
+  .nav-mobile-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 110;
+    width: 40px;
+    height: 40px;
+    background: rgba(5, 7, 10, 0.7);
+    border: 1px solid var(--border);
+    cursor: pointer;
+  }
+ 
+  .nav-mobile-toggle span {
+    width: 18px;
+    height: 1.5px;
+    background: var(--green);
+    margin: 0 auto;
+  }
+ 
+  .nav-mobile-panel {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 105;
+    background: rgba(5, 7, 10, 0.97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .nav-mobile-panel ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+ 
+  .nav-mobile-panel .nav-item .nav-label {
+    max-width: none;
+    opacity: 1;
+    font-size: 16px;
+  }
+}
+ 

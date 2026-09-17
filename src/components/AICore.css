@@ -1,0 +1,50 @@
+.ai-core {
+  background: radial-gradient(ellipse at center, #061410 0%, #04070a 70%);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+ 
+.ai-core-inner {
+  text-align: center;
+}
+ 
+.ai-core-stage {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  height: 360px;
+  margin: 0 auto;
+}
+ 
+.ai-core-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+ 
+.ai-core-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 16px;
+  margin: 36px 0 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+}
+ 
+.ai-core-tags li {
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  background: rgba(0, 255, 176, 0.04);
+}
+ 
+@media (max-width: 768px) {
+  .ai-core-stage {
+    height: 260px;
+  }
+}
+ 

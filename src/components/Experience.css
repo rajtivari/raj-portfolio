@@ -1,0 +1,54 @@
+.timeline {
+  position: relative;
+  padding-left: 28px;
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+ 
+.timeline-item {
+  position: relative;
+}
+ 
+.timeline-marker {
+  position: absolute;
+  left: -33px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  background: var(--green);
+  box-shadow: 0 0 10px var(--green);
+  border-radius: 50%;
+}
+ 
+.timeline-content {
+  padding: 18px 22px;
+}
+ 
+.timeline-type {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: var(--cyan);
+  text-transform: uppercase;
+}
+ 
+.timeline-content h3 {
+  margin: 6px 0 4px;
+  font-size: 18px;
+}
+ 
+.timeline-org {
+  margin: 0 0 8px;
+  color: var(--text-dim);
+  font-size: 13px;
+}
+ 
+.timeline-detail {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: 14px;
+  line-height: 1.5;
+}
+ 

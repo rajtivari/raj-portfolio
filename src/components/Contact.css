@@ -1,0 +1,47 @@
+.contact {
+  border-top: 1px solid var(--border);
+}
+ 
+.contact-inner {
+  text-align: center;
+}
+ 
+.contact-title {
+  font-size: clamp(30px, 5vw, 52px);
+  letter-spacing: 0.04em;
+  margin: 0 0 40px;
+  color: var(--green);
+  text-shadow: 0 0 30px rgba(0, 255, 176, 0.35);
+}
+ 
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 60px;
+}
+ 
+.contact-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+ 
+.contact-links a:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+ 
+.contact-footer {
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+ 
